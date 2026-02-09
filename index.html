@@ -100,7 +100,6 @@
         mix-blend-mode: multiply;
       }
     </style>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body>
     <div id="root"></div>
@@ -185,54 +184,67 @@
             // 新的数据结构：姓名 -> 关键词列表
             // 注意：这里的姓名需要与 MEMBERS_DATA 中的昵称保持一致
             memberKeywords: {
-                "德扑高手": ["成长", "架构", "React", "不加班", "健身", "大模型", "突破"],
-                "产品驯兽师": ["暴富", "产品", "用户", "加薪", "快乐", "AI", "好运"],
-                "像素眼": ["设计", "云南", "旅游", "松弛感", "早睡", "暴富", "快乐"],
-                "数据大亨": ["数据", "转化", "买房", "平安", "好运", "发财", "成长"],
-                "养生朋克": ["React", "WebGL", "脱单", "结婚", "买车", "成长", "不加班"],
-                "减肥达人": ["大模型", "AI", "减肥", "运动", "马甲线", "健康"],
-                "躺平协会会长": ["西藏", "旅游", "躺平", "早睡", "顺利", "暴富"],
-                "全村的希望": ["加薪", "买房", "恋爱", "快乐", "健康", "突破"],
-                "代码诗人": ["架构", "成长", "发财", "平安", "新疆", "松弛感"]
+                "11楼12点过了才去干饭的人": ["干饭", "睡觉", "工作", "徒步"],
+                "喵喵喵": ["进步", "学习", "喵喵"],
+                "糖醋里脊": ["创新", "学习", "成就"],
+                "野山上的wan子": ["新篇章", "新考生"],
+                "喜欢鼓掌的兔子": ["曲折", "上班", "收获"],
+                "大脑慢速运转": ["成长", "多元", "幸运", "感恩"],
+                "德扑高手": ["学习", "实践", "试错"],
             }
         };
 
         const MEMBERS_DATA = [
             {
-                id: '1', name: '德扑高手', 
+                id: '1', name: '11楼12点过了才去干饭的人', 
                 avatarColor: 'bg-blue-600', 
-                highlight: '在Q3成功重构了核心交易模块，将响应时间降低了40%，那一刻看着监控曲线掉下来，成就感爆棚！',
-                thanks: '特别感谢“产品驯兽师”，在需求变更最频繁的时候帮我们挡了很多不合理的改动，还经常请大家喝奶茶。',
-                flag: '明年要考下高级架构师证书，另外希望能坚持每周跑步三次！'
+                highlight: '大寒的那天小伙伴一起堆了一只大雪猫；数智观潮以好看的样子被大家看见；完成了自己的麦理浩径徒步旅行，好多好多呀……',
+                thanks: '哈哈，我想@自己：好好吃饭，好好睡觉，开心且保持工作的激情。',
+                flag: '春天生，夏天长，秋天收，冬天藏，遵循自然规律，过好每一天。'
             },
             {
-                id: '2', name: '产品驯兽师', 
+                id: '2', name: '喵喵喵', 
                 avatarColor: 'bg-green-600',
-                highlight: '年底上线的“新春活动”功能，用户日活突破了历史峰值，看到用户群里的好评，觉得所有的加班都值了。',
-                thanks: '感谢“德扑高手”和开发团队的兄弟们，虽然我需求变得多，但大家最后都完美交付了，给力！',
-                flag: '希望明年能带出一个更成熟的产品新人，自己也能抽出时间去学学AI绘画。'
+                highlight: '一步一步完成任务',
+                thanks: '@预研部所有小伙伴：感谢照顾！！！',
+                flag: '希望能学到更多知识留在达梦'
             },
             {
-                id: '3', name: '像素眼', 
+                id: '3', name: '糖醋里脊', 
                 avatarColor: 'bg-pink-600',
-                highlight: '设计了全套新的Design System，并成功推行到三个主要项目中，界面的统一性有了质的飞跃。',
-                thanks: '感谢测试组的小姐姐们，每次都能发现我设计稿里极其细微的像素偏差，让产品更完美。',
-                flag: '想要在这个行业里继续深耕，另外计划带父母去一趟云南旅游。'
+                highlight: '独立完成的第一项任务',
+                thanks: '@全体成员 大家都是我的好老师呀',
+                flag: 'flag可不能乱立啊！'
             },
             {
-                id: '4', name: '数据大亨', 
+                id: '4', name: '野山上的wan子', 
                 avatarColor: 'bg-amber-600',
-                highlight: '策划的“双十一”预热活动，转化率比去年提升了20%。',
-                thanks: '感谢数据分析的同事，帮我捞了很多底层数据，支持了我的决策。',
-                flag: '学会Python，能够自己跑一些简单的数据分析脚本，不再总是麻烦别人。'
+                highlight: '旱鸭子的游泳技能get',
+                thanks: '@bbmm：辛苦了，岁岁平安，年年有余！',
+                flag: '拿到驾照'
             },
             {
-                id: '5', name: '养生朋克', 
+                id: '5', name: '喜欢鼓掌的兔子', 
                 avatarColor: 'bg-indigo-600',
-                highlight: '终于把陈年老代码库升级到了React 18，解决了长达两年的内存泄漏问题。',
-                thanks: '感谢我的导师，在我最迷茫的时候给了我很多职业规划的建议。',
-                flag: '早睡早起，告别脱发！技术上想深入研究一下WebGL。'
+                highlight: '全程见证了武汉的大雪纷纷',
+                thanks: '@dyl：奇思泉涌，倾囊相授，我太崇拜您了。\n @lc：善用ai的大佬，我从您身上学到了不少！',
+                flag: '发paper！'
             },
+            {
+                id: '6', name: '大脑慢速运转', 
+                avatarColor: 'bg-red-600',
+                highlight: '学习到了很多为人处事的道理，变得更自洽了；让许多想法变成了实际；堆雪人挺好玩的；解锁了一两项新技能，明年继续；',
+                thanks: '@dyl：团队的“点子王”，善于自省和迭代很值得学习；\n @lx：配套服务和部署“后勤”做的杠杠的，为开发省了很多时间 \n @zxw、gcm：一起出节目很开心！',
+                flag: '希望能多扩宽自己的边界，在陌生领域不断学习不断成长；有更健康的作息，感恩感激每一天；心态更加开放包容'
+            },
+            {
+                id: '7', name: '德扑高手', 
+                avatarColor: 'bg-yellow-600',
+                highlight: '被其他部门的同事询问，能不能借用自己PPT中的内容用于技术培训汇报',
+                thanks: '@lx：感谢你在工作的方方面面给予了我很多帮助与指导，让我在公司里有了安全感与归属感，希望之后我能更多地帮上你。\n@gcm：希望我们都能顺利毕业！@yls、tjh：明年也要一起干饭！\n@zxw：你一定能过上向往的生活！',
+                flag: '做出能发Paper的工作；考取数据库系统工程师软考证书'
+            }                
+            
         ];
 
         // ==========================================
@@ -576,7 +588,7 @@
                                             onMouseEnter={() => setHoveredWordIndex(idx)}
                                             onMouseLeave={() => setHoveredWordIndex(null)}
                                             className={`
-                                                cursor-help font-serif font-bold leading-none transition-all duration-300
+                                                cursor-pointer font-serif font-bold leading-none transition-all duration-300
                                                 hover:scale-125 relative drop-shadow-sm
                                                 ${item.color}
                                                 ${hoveredWordIndex === idx ? 'z-50' : 'z-0'}
@@ -683,12 +695,15 @@
                             style={{ transformStyle: 'preserve-3d', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.2))' }}
                         >
                             {!isOpen && (
-                                <div className="absolute -top-[175px] left-1/2 -translate-x-1/2 flex flex-col items-center justify-center space-y-3">
-                                    <div className="w-14 h-14 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center shadow-[0_4px_10px_rgba(0,0,0,0.3)] border-[3px] border-gold-light ring-2 ring-red-800/30">
-                                        <span className="text-richRed font-bold text-2xl font-serif ">福</span>
+                                <div className="absolute -top-[120px] left-1/2 -translate-x-1/2 flex flex-col items-center justify-center cursor-pointer group pointer-events-auto" onClick={(e) => {e.stopPropagation(); toggleOpen();}}>
+                                    {/* The Seal - 恢复优雅的火漆印设计 */}
+                                    <div className="w-20 h-20 bg-gradient-to-br from-gold to-gold-dark rounded-full flex items-center justify-center shadow-[0_4px_15px_rgba(0,0,0,0.3)] border-[2px] border-white/30 ring-4 ring-red-900/20 group-hover:scale-110 transition-transform duration-300">
+                                        <span className="text-richRed font-bold text-3xl font-serif select-none">福</span>
                                     </div>
-                                    <div className="text-gold-light font-bold text-sm tracking-widest bg-red-950/40 px-3 py-1 rounded-full animate-pulse-slow backdrop-blur-md border border-gold/20 text-center">
-                                        点击开启
+                                    
+                                    {/* The Text Label - 优雅的提示标签 (已修复文字居中) */}
+                                    <div className="mt-2 bg-red-900/60 backdrop-blur-sm px-5 py-2 rounded-full border border-gold/30 text-gold-light text-[14px] font-serif tracking-widest shadow-sm group-hover:bg-red-900/80 transition-colors flex items-center justify-center gap-1 animate-pulse-slow whitespace-nowrap">
+                                        <span className="inline-block text-center">点击拆信</span>
                                     </div>
                                 </div>
                             )}
@@ -710,7 +725,7 @@
             return (
                 <div 
                     onClick={onClick}
-                    className={`${bgColor} ${rotate} paper-texture relative p-5 shadow-lg cursor-none transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:z-10 hover:rotate-0 w-full aspect-square flex flex-col justify-between group rounded-sm border border-gray-400/20`}
+                    className={`${bgColor} ${rotate} paper-texture relative p-5 pb-12 shadow-lg cursor-none transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:z-10 hover:rotate-0 w-full aspect-square flex flex-col group rounded-sm border border-gray-400/20`}
                 >
                     {/* 顶部胶带效果 */}
                     <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-20 h-5 bg-white/30 backdrop-blur-md shadow-sm rotate-1 transform skew-x-6 border-l border-r border-white/40"></div>
@@ -725,15 +740,20 @@
                     
                     <div className="flex-grow overflow-hidden relative my-2">
                         {/* 使用手写体显示 Flag */}
-                        <p className="text-sm text-gray-700 line-clamp-4 font-handwriting leading-6" style={{ fontStyle: 'normal' }}>“{data.flag}”</p>
-                        <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-gray-100/40 to-transparent"></div>
+                        <p className="text-sm text-gray-700 line-clamp-3 font-handwriting leading-6" style={{ fontStyle: 'normal' }}>“{data.flag}”</p>
+                        <div className="absolute bottom-0 left-0 w-full h-8 bg-gradient-to-t from-gray-100/20 to-transparent"></div>
                     </div>
-                    <div className="mt-2 flex justify-between items-center">
-                         {/* 底部小印章 */}
-                        <div className="opacity-40">
-                             <div className="border border-corpRed/50 text-[10px] text-corpRed px-1 rounded-sm rotate-[-5deg] font-serif">马年大吉</div>
+                    
+                    {/* 强引导点击按钮 - 居中显示 */}
+                    <div className="absolute bottom-4 left-0 w-full flex justify-center">
+                         <div className="bg-white/80 hover:bg-corpRed hover:text-white text-corpRed text-xs font-bold px-4 py-2 rounded-full border border-corpRed/20 shadow-sm transition-all duration-300 flex items-center gap-1 cursor-pointer transform group-hover:-translate-y-1">
+                            <span>点击查看更多</span>
                         </div>
-                        <Maximize2Icon size={16} className="text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity hover:text-corpRed" />
+                    </div>
+
+                    {/* 底部小印章 - 移到角落 */}
+                    <div className="absolute bottom-2 right-2 opacity-20 pointer-events-none">
+                         <div className="border border-corpRed/50 text-[10px] text-corpRed px-1 rounded-sm rotate-[-15deg] font-serif">马年大吉</div>
                     </div>
                 </div>
             );
@@ -767,7 +787,25 @@
                             </section>
                             <section>
                                 <h3 className="flex items-center text-corpBlue font-bold mb-3 text-lg font-serif"><span className="mr-2 text-xl">🙏</span> 特别感谢</h3>
-                                <div className="p-5 bg-blue-50/70 rounded-lg border-l-4 border-corpBlue text-gray-700 text-base leading-relaxed shadow-sm">{data.thanks}</div>
+                                <div className="p-5 bg-blue-50/70 rounded-lg border-l-4 border-corpBlue text-gray-700 text-base leading-relaxed shadow-sm">
+                                    {data.thanks ? data.thanks.split('\n').map((line, idx) => {
+                                        const trimmed = line.trim();
+                                        if (!trimmed) return null;
+                                        // 正则匹配：以 @ 开头，直到遇到中文冒号或英文冒号
+                                        const match = trimmed.match(/^(@[^：:]+[：:])(.*)/);
+                                        
+                                        if (match) {
+                                            return (
+                                                <div key={idx} className="mb-2 last:mb-0">
+                                                    <span className="text-corpBlue font-bold bg-white/60 px-1.5 py-0.5 rounded mr-1 shadow-sm inline-block">{match[1]}</span>
+                                                    <span>{match[2]}</span>
+                                                </div>
+                                            );
+                                        }
+                                        // 没有匹配到特定格式则正常显示
+                                        return <div key={idx} className="mb-2 last:mb-0">{trimmed}</div>;
+                                    }) : "暂无"}
+                                </div>
                             </section>
                             <section className="relative">
                                 <h3 className="flex items-center text-gold-dark font-bold mb-3 text-lg font-serif"><span className="mr-2 text-xl">🚩</span> 明年 Flag</h3>
@@ -871,7 +909,7 @@
                                         <div className="w-64 h-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCA2NCAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMzIgMTZDMzIgMjQuODg1NCAyNC44Mzc0IDMyIDE2IDMyQzcuMTYyNjMgMzIgMCAyNC44ODU0IDAgMTZDMCA3LjExNDY1IDcuMTYyNjMgMCAxNiAwQzI0LjgzNzQgMCAzMiA3LjExNDY1IDMyIDE2Wk02NCAxNkM2NCAyNC44ODU0IDU2LjgzNzQgMzIgNDggMzJDMzkuMTYyNiAzMiAzMiAyNC44ODU0IDMyIDE2QzMyIDcuExNDY1IDM5LjE2MjYgMCA0OCAwQzU2LjgzNzQgMCA2NCA3LjExNDY1IDY0IDE2WiIgZmlsbD0iI0Q0QUYzNyIgZmlsbC1vcGFjaXR5PSIwLjQiLz48L3N2Zz4=')] bg-repeat-x"></div>
                                     </div>
                                     <BookHeartIcon className="text-gold mr-4 w-8 h-8 filter drop-shadow-sm relative z-10" />
-                                    <h2 className="text-3xl font-bold text-gold-light pb-2 relative z-10 font-serif tracking-wider border-b-2 border-gold/50">小伙伴们的关键词</h2>
+                                    <h2 className="text-3xl font-bold text-gold-light pb-2 relative z-10 font-serif tracking-wider border-b-2 border-gold/50">【 识 途 】 · 岁 月 留 痕</h2>
                                 </div>
                                 <LeaderEnvelope content={TEAM_WISHES_DATA} />
                             </section>
@@ -883,7 +921,7 @@
                                         <div className="w-64 h-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCA2NCAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMzIgMTZDMzIgMjQuODg1NCAyNC44Mzc0IDMyIDE2IDMyQzcuMTYyNjMgMzIgMCAyNC44ODU0IDAgMTZDMCA3LjExNDY1IDcuMTYyNjMgMCAxNiAwQzI0LjgzNzQgMCAzMiA3LjExNDY1IDMyIDE2Wk02NCAxNkM2NCAyNC44ODU0IDU2LjgzNzQgMzIgNDggMzJDMzkuMTYyNiAzMiAzMiAyNC44ODU0IDMyIDE2QzMyIDcuExNDY1IDM5LjE2MjYgMCA0OCAwQzU2LjgzNzQgMCA2NCA3LjExNDY1IDY0IDE2WiIgZmlsbD0iI0Q0QUYzNyIgZmlsbC1vcGFjaXR5PSIwLjQiLz48L3N2Zz4=')] bg-repeat-x"></div>
                                     </div>
                                     <MessageCircleIcon className="text-gold mr-4 w-8 h-8 filter drop-shadow-sm relative z-10" />
-                                    <h2 className="text-3xl font-bold text-gold-light pb-2 relative z-10 font-serif tracking-wider border-b-2 border-gold/50">小伙伴们的心声</h2>
+                                    <h2 className="text-3xl font-bold text-gold-light pb-2 relative z-10 font-serif tracking-wider border-b-2 border-gold/50">【 扬 鞭 】 · 共 赴 山 海</h2>
                                 </div>
                                 <div className="text-center mb-12 max-w-3xl mx-auto">
                                     <div className="inline-block bg-deepRed/60 border border-gold/40 rounded-full px-10 py-4 shadow-[0_0_20px_rgba(212,175,55,0.2)] backdrop-blur-md animate-pulse-slow">
@@ -914,6 +952,5 @@
         const root = ReactDOM.createRoot(rootElement);
         root.render(<App />);
     </script>
-<script type="module" src="/index.tsx"></script>
 </body>
 </html>
